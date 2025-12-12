@@ -1,0 +1,60 @@
+/* GLOBAL GREEN THEME */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+:root {
+  --green-light: #E8F5E9;
+  --green-medium: #A5D6A7;
+  --green-primary: #4CAF50;
+  --green-dark: #132515;
+}
+
+/* Apply greenery to whole site */
+body {
+  background-color: var(--green-dark); 
+  font-family: "Poppins", sans-serif;
+  color: var(--green-dark);
+}
+
+/* Make all sections use greenery-style spacing */
+section {
+  background-color: var(--green-light);
+  padding: 40px 0;
+}
+
+/* Buttons */
+button, .btn {
+  background: var(--green-primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover, .btn:hover {
+  background: var(--green-dark);
+}
+
+/* Inputs */
+input, textarea {
+  background: var(--green-medium);
+  border: 2px solid var(--green-primary);
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #2e7d32;
+}
