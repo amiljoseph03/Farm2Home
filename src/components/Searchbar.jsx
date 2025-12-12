@@ -24,7 +24,7 @@ const styles = {
     margin: '20px auto',
     display: 'flex',
     alignItems: 'center',
-    background: '#e8f5e9', // light greenery tone
+    background: '#e8f5e9', 
     borderRadius: '40px',
     padding: '8px 14px',
     boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
@@ -38,7 +38,7 @@ const styles = {
     color: '#2e7d32',
   },
   button: {
-    background: '#2e7d32', // greenery dark shade
+    background: '#2e7d32', 
     border: 'none',
     outline: 'none',
     padding: '10px 14px',

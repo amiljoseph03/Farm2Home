@@ -1,4 +1,4 @@
-/* GLOBAL GREEN THEME */
+
 * {
   margin: 0;
   padding: 0;
@@ -19,20 +19,20 @@ html, body {
   --green-dark: #132515;
 }
 
-/* Apply greenery to whole site */
+
 body {
   background-color: var(--green-dark); 
   font-family: "Poppins", sans-serif;
   color: var(--green-dark);
 }
 
-/* Make all sections use greenery-style spacing */
+
 section {
   background-color: var(--green-light);
   padding: 40px 0;
 }
 
-/* Buttons */
+
 button, .btn {
   background: var(--green-primary);
   color: white;
@@ -46,7 +46,7 @@ button:hover, .btn:hover {
   background: var(--green-dark);
 }
 
-/* Inputs */
+
 input, textarea {
   background: var(--green-medium);
   border: 2px solid var(--green-primary);
