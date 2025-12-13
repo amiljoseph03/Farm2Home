@@ -6,6 +6,7 @@ import Searchbar from './components/Searchbar';
 import './App.css';
 import FeaturedSection from './components/FeaturedSection';
 import Categories from './components/Categories';
+import Category2 from './components/Category2';
 
 
 
@@ -16,7 +17,8 @@ function App() {
       <HomeSection />
       <Searchbar/>
       <FeaturedSection/>
-      <Categories/>
+      {/* <Categories/> */}
+      <Category2/>
       <Routes>
         {/* <Route path="/" element={<HomeSection />} /> */}
     
