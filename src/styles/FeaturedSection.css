@@ -1,3 +1,4 @@
+/* ===== TOP SELLING SECTION ===== */
 .top-selling {
   min-height: 100vh;
   padding: 70px 20px;
@@ -9,6 +10,7 @@
   text-align: center;
 }
 
+/* Title */
 .top-selling h2 {
   color: #d7f5dc;
   font-size: 30px;
@@ -17,11 +19,11 @@
 
 .top-selling h2 span {
   border: 1px solid #6fbf73;
-  padding: 8px 20px;
+  padding: 8px 22px;
   border-radius: 30px;
 }
 
-
+/* ===== GRID ===== */
 .selling-grid {
   display: flex;
   justify-content: center;
@@ -29,7 +31,7 @@
   flex-wrap: wrap;
 }
 
-
+/* ===== CARD ===== */
 .selling-card {
   width: 260px;
   background: rgba(255, 255, 255, 0.08);
@@ -44,14 +46,39 @@
   transform: translateY(-12px);
 }
 
-
-.selling-card img {
-  width: 160px;
-  height: auto;
-  margin-bottom: 20px;
+/* ===== IMAGE FIX ===== */
+.image-box {
+  width: 100%;
+  height: 160px;                 /* INCREASED SIZE */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  position: relative;
 }
 
 
+.image-box img {
+  width: 185%;          /* INCREASE IMAGE WIDTH */
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+/* Soft glow behind image */
+.image-box::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(111, 191, 115, 0.25);
+  filter: blur(45px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+
+/* ===== TEXT ===== */
 .selling-card h3 {
   color: #e8ffe9;
   margin-bottom: 6px;
@@ -63,9 +90,26 @@
   margin-bottom: 18px;
 }
 
-
+/* ===== PRICE ===== */
 .price {
   font-size: 16px;
   font-weight: bold;
   color: #6fbf73;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .selling-card {
+    width: 230px;
+  }
+}
+
+@media (max-width: 480px) {
+  .selling-card {
+    width: 90%;
+  }
+
+  .top-selling h2 {
+    font-size: 24px;
+  }
 }
