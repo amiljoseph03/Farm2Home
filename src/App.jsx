@@ -4,6 +4,7 @@ import HomeSection from './components/HomeSection';
 import Searchbar from './components/Searchbar';
 
 import './App.css';
+import FeaturedSection from './components/FeaturedSection';
 
 
 
@@ -13,6 +14,7 @@ function App() {
     <Router>
       <HomeSection />
       <Searchbar/>
+      <FeaturedSection/>
       <Routes>
         {/* <Route path="/" element={<HomeSection />} /> */}
     

@@ -1,0 +1,71 @@
+.top-selling {
+  min-height: 100vh;
+  padding: 70px 20px;
+  background: radial-gradient(
+    circle at top,
+    #1f3d2b,
+    #0f1f16
+  );
+  text-align: center;
+}
+
+.top-selling h2 {
+  color: #d7f5dc;
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+.top-selling h2 span {
+  border: 1px solid #6fbf73;
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+
+
+.selling-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
+.selling-card {
+  width: 260px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  padding: 30px 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.selling-card:hover {
+  transform: translateY(-12px);
+}
+
+
+.selling-card img {
+  width: 160px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+.selling-card h3 {
+  color: #e8ffe9;
+  margin-bottom: 6px;
+}
+
+.selling-card p {
+  font-size: 13px;
+  color: #b9eac0;
+  margin-bottom: 18px;
+}
+
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #6fbf73;
+}
