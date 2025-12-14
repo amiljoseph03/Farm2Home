@@ -7,7 +7,7 @@ const DeliverySection = () => {
       <h3 className="delivery-title">VISIT OUR LOCATION</h3>
 
       <div className="delivery-container">
-        {/* LEFT CONTENT */}
+      
         <div className="delivery-left">
           <img src={deliveryBoy} alt="Delivery" className="delivery-img" />
 
