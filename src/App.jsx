@@ -12,6 +12,7 @@ import RentalEquipment from './components/RentalEquipment';
 import PriceList from './components/PriceList';
 import AgriTips from './components/AgriTips';
 import Testimonials from './components/Testimonials';
+import WhyChooseUs from './components/WhyChooseUs';
 
 function App() {
   return (
@@ -20,12 +21,13 @@ function App() {
       <Searchbar/>
       <FeaturedSection/>
       <About/>
-      <Categories/>
+      {/* <Categories/> */}
       <Category2/>
     <RentalEquipment/>
     <PriceList/>
     <AgriTips/>
     <Testimonials/>
+    <WhyChooseUs/>
       <Routes>
         {/* <Route path="/" element={<HomeSection />} /> */}
     
