@@ -10,6 +10,7 @@ import Category2 from './components/Category2';
 import About from './components/About';
 import RentalEquipment from './components/RentalEquipment';
 import PriceList from './components/PriceList';
+import AgriTips from './components/AgriTips';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
     <RentalEquipment/>
     <PriceList/>
+    <AgriTips/>
       <Routes>
         {/* <Route path="/" element={<HomeSection />} /> */}
     

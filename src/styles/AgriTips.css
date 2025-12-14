@@ -1,0 +1,83 @@
+.agri-section {
+  width: 100%;
+  background: #f4faf4;
+}
+
+
+.agri-row {
+  display: flex;
+  align-items: stretch;
+  min-height: 380px;
+}
+
+
+.agri-row.reverse {
+  flex-direction: row-reverse;
+}
+
+
+.agri-image {
+  width: 50%;
+}
+
+.agri-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.agri-content {
+  width: 50%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.agri-content h2 {
+  font-size: 60px;
+  color: #1f3d2b;
+  margin-bottom: 14px;
+}
+
+.agri-content p {
+  font-size: 25px;
+  color: #444;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.agri-content ul {
+  padding: 0;
+  list-style: none;
+
+}
+
+.agri-content ul li {
+  margin-bottom: 8px;
+  color: #4da861;
+  font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .agri-row,
+  .agri-row.reverse {
+    flex-direction: column;
+  }
+
+  .agri-image,
+  .agri-content {
+    width: 100%;
+  }
+
+  .agri-image {
+    height: 240px;
+  }
+
+  .agri-content {
+    padding: 30px;
+  }
+}
