@@ -1,0 +1,275 @@
+
+
+.welcome-header {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #f0f8ff; 
+  border-radius: 10px;
+}
+
+.welcome-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.welcome-header p {
+  font-size: 1rem;
+  color: #34495e;
+}
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f7f8ff;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: #1b7057;
+  color: white;
+  padding: 24px;
+}
+
+.sidebar h1 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* MAIN */
+.dashboard {
+  flex: 1;
+  padding: 30px;
+}
+
+/* STATS */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 18px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.stat-card p {
+  font-size: 13px;
+  color: #777;
+}
+
+.stat-card h2 {
+  margin-top: 6px;
+  color: #6c4df5;
+}
+
+/* SECTION */
+.section {
+  margin-bottom: 40px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-header h3 {
+  font-size: 20px;
+}
+
+.section-header button {
+  background: #eee;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* CARD ROW */
+.card-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+/* IMAGE CARD */
+.image-card {
+  min-width: 220px;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* IMAGE */
+.image-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+/* CONTENT */
+.image-card-content {
+  padding: 12px;
+}
+
+.image-card-content h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.image-card-content p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* BIGGER SUBSCRIPTION CARDS */
+.subscription-section .image-card {
+  min-width: 380px;
+
+}
+
+.subscription-section .image-card img {
+  height: 230px;
+   object-fit: contain;      /* fits the full image inside card */
+  object-position: center;
+}
+
+.subscription-section .image-card-content h4 {
+  font-size: 17px;
+}
+
+.subscription-section .image-card-content p {
+  font-size: 14px;
+}
+
+
+/* ========================= */
+/* RESPONSIVE STYLES */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .image-card {
+    min-width: 200px;
+  }
+
+  .subscription-section .image-card {
+    min-width: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* STACK SIDEBAR ON TOP */
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .sidebar nav {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .sidebar nav a {
+    white-space: nowrap;
+    font-size: 13px;
+  }
+
+  /* MAIN CONTENT */
+  .dashboard {
+    padding: 20px;
+  }
+
+  /* STATS */
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* CARD ROW */
+  .card-row {
+    gap: 12px;
+  }
+
+  /* IMAGE CARD */
+  .image-card {
+    min-width: 180px;
+  }
+
+  .image-card img {
+    height: 120px;
+  }
+
+  /* SUBSCRIPTION CARDS */
+  .subscription-section .image-card {
+    min-width: 320px;
+  }
+
+  .subscription-section .image-card img {
+    height: 190px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* STATS - SINGLE COLUMN */
+  .stats-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* TEXT SIZES */
+  .section-header h3 {
+    font-size: 18px;
+  }
+
+  .image-card-content h4 {
+    font-size: 14px;
+  }
+
+  .image-card-content p {
+    font-size: 12px;
+  }
+
+  /* BUTTON */
+  .section-header button {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+}

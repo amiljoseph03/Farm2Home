@@ -9,6 +9,10 @@ const priceItems = [
   { name: 'Egg', price: '₹7 / piece', image: egg },
   { name: 'Milk', price: '₹55 / litre', image: milk },
   { name: 'Tomato', price: '₹30 / kg', image: corn },
+  { name: 'Milk', price: '₹55 / litre', image: milk },
+  { name: 'Tomato', price: '₹30 / kg', image: corn },
+  { name: 'Milk', price: '₹55 / litre', image: milk },
+  { name: 'Tomato', price: '₹30 / kg', image: corn },
 ];
 
 const PriceList = () => {

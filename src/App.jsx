@@ -46,23 +46,47 @@
 // export default App;
 
 
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+
+
+// // import './App.css';
+// import Home from './pages/Home'
+
+
+// import Dashboard  from './users/pages/dashboard/Dashboard';
+
+// function App() {
+//   return (
+//     <Router>
+//       <Home />
+
+//       <Routes>
+//         {/* <Route path="/" element={<HomeSection />} /> */}
+
+//         <Route path="/dashboard" element={<Dashboard />} />
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-
-
-// import './App.css';
-
-
-import Home from './pages/Home'
-
+import Home from './pages/Home';
+import Dashboard from './users/pages/dashboard/Dashboard';
+import UserProfile from './users/pages/userprofile/UserProfile'
 function App() {
   return (
     <Router>
-       <Home/>
-   
       <Routes>
-        {/* <Route path="/" element={<HomeSection />} /> */}
-    
+        {/* Landing page */}
+        <Route path="/" element={<Home />} />
+
+        {/* Dashboard page */}
+        <Route path="/user-dashboard" element={<Dashboard />} />
+        <Route path="/user-profile" element={<UserProfile />} />
       </Routes>
     </Router>
   );
