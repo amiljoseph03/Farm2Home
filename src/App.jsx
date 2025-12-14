@@ -75,6 +75,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Auth from './Pages/Auth';
 import Dashboard from './users/pages/dashboard/Dashboard';
 import UserProfile from './users/pages/userprofile/UserProfile'
 function App() {
@@ -83,6 +84,9 @@ function App() {
       <Routes>
         {/* Landing page */}
         <Route path="/" element={<Home />} />
+
+        <Route path="/login" element={<Auth />} />
+        <Route path="/register" element={<Auth register />} />
 
         {/* Dashboard page */}
         <Route path="/user-dashboard" element={<Dashboard />} />
