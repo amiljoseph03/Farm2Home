@@ -8,9 +8,8 @@ import FeaturedSection from './components/FeaturedSection';
 import Categories from './components/Categories';
 import Category2 from './components/Category2';
 import About from './components/About';
-
-
-
+import RentalEquipment from './components/RentalEquipment';
+import PriceList from './components/PriceList';
 
 function App() {
   return (
@@ -19,8 +18,11 @@ function App() {
       <Searchbar/>
       <FeaturedSection/>
       <About/>
-      {/* <Categories/> */}
+      <Categories/>
       <Category2/>
+
+    <RentalEquipment/>
+    <PriceList/>
       <Routes>
         {/* <Route path="/" element={<HomeSection />} /> */}
     

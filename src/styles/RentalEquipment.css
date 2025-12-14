@@ -1,0 +1,85 @@
+/* Page */
+.rental-page {
+  padding: 80px 20px;
+  background: #f6fbf7;
+  text-align: center;
+}
+
+/* Title */
+.rental-title {
+  font-size: 32px;
+  color: #1f3d2b;
+  margin-bottom: 10px;
+}
+
+.rental-subtitle {
+  color: #4f6f5b;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.rental-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Card */
+.rental-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rental-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.rental-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 14px;
+}
+
+/* Text */
+.rental-card h3 {
+  color: #1f3d2b;
+  margin-bottom: 6px;
+}
+
+.rental-card .price {
+  color: #6fbf73;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* Button */
+.rental-card button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #6fbf73, #4da861);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.rental-card button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .rental-title {
+    font-size: 26px;
+  }
+}
