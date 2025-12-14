@@ -16,7 +16,7 @@
 .why-images {
   display: grid;
   grid-template-columns: repeat(2, 130px);
-  gap: 70px;
+  gap: 60px;
 }
 
 .why-images img {
@@ -68,7 +68,7 @@
   border-radius: 10px;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .why-container {
     flex-direction: column;

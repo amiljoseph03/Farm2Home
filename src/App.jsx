@@ -13,6 +13,7 @@ import PriceList from './components/PriceList';
 import AgriTips from './components/AgriTips';
 import Testimonials from './components/Testimonials';
 import WhyChooseUs from './components/WhyChooseUs';
+import Delivary from './components/Delivery';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
     <AgriTips/>
     <Testimonials/>
     <WhyChooseUs/>
+    <Delivary/>
       <Routes>
         {/* <Route path="/" element={<HomeSection />} /> */}
     
