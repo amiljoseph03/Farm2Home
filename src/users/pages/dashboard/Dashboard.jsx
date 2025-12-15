@@ -1,21 +1,31 @@
 import React from 'react';
 import './Dashboard.css';
+import { Link } from 'react-router-dom';
+import {
+  FaTachometerAlt,
+  FaUser,
+  FaStore,
+  FaShoppingBag,
+  FaTractor,
+  FaRedoAlt,
+  FaFileDownload,
+} from 'react-icons/fa';
 
 const stats = [
-  { label: 'Purchases', value: 12 },
-  { label: 'Rentals', value: 5 },
-  { label: 'Subscriptions', value: 2 },
+  { label: 'Total Purchases', value: 12 },
+  { label: 'Total Rentals', value: 5 },
+  { label: 'Total Subscriptions', value: 2 },
 ];
 
 const recentActivity = [
   {
-    title: 'Tomato Seeds Purchased',
-    img: 'https://images.unsplash.com/photo-1582284540020-8acbe03f4924',
+    title: 'Bean Seeds Purchased',
+    img: 'https://i.pinimg.com/1200x/65/09/da/6509da5ff90408037d8c55905996b822.jpg',
     info: '₹120 • Delivered',
   },
   {
     title: 'Tractor Rented',
-    img: 'https://images.unsplash.com/photo-1598514983318-2f64f8f4796c',
+    img: 'https://i.pinimg.com/736x/e2/f7/f7/e2f7f742a4a7c318d909e0f287d9fcf5.jpg',
     info: '3 Days Rental',
   },
 ];
@@ -37,7 +47,12 @@ const rentals = [
   {
     title: 'Power Tiller',
     img: 'https://i.pinimg.com/1200x/3c/6e/29/3c6e2905b34e61b603bd0bce029c543b.jpg',
-    info: 'Return Date: 28 Sep',
+    info: 'Return Date: 28 December 2025',
+  },
+  {
+    title: 'Tractor',
+    img: 'https://i.pinimg.com/736x/c2/2e/94/c22e94a2a609b591e31e01821465c228.jpg',
+    info: 'Return Date: 28 December 2025',
   },
 ];
 
@@ -69,14 +84,42 @@ const Dashboard = () => {
       {/* SIDEBAR */}
       <aside className="sidebar">
         <h1>Farm2Home</h1>
+
         <nav>
-          <a className="active">Dashboard</a>
-          <a>Browse Products</a>
-          <a>Purchased Products</a>
-          <a>Rented Items</a>
-          <a>Subscriptions</a>
-          <a>Reviews</a>
-          <a>Profile</a>
+          <Link to="/dashboard" className="active">
+            <FaTachometerAlt className="nav-icon" />
+            Dashboard
+          </Link>
+
+          <Link to="/user-profile">
+            <FaUser className="nav-icon" />
+            Profile
+          </Link>
+
+          <Link to="/products">
+            <FaStore className="nav-icon" />
+            Browse Products
+          </Link>
+
+          <Link to="/purchase-history">
+            <FaShoppingBag className="nav-icon" />
+            Purchase History
+          </Link>
+
+          <Link to="/rentals">
+            <FaTractor className="nav-icon" />
+            Rented Items
+          </Link>
+
+          <Link to="/subscriptions">
+            <FaRedoAlt className="nav-icon" />
+            Subscriptions
+          </Link>
+
+          <Link to="/receipts">
+            <FaFileDownload className="nav-icon" />
+            Downloaded Receipts
+          </Link>
         </nav>
       </aside>
 
