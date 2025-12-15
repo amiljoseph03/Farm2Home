@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Auth from './pages/Auth';
 import Dashboard from './users/pages/dashboard/Dashboard';
 import UserProfile from './users/pages/userprofile/UserProfile'
+
+import AdminProfile from './admin/adminprofile/AdminProfile'
 import AdminDashboard from './admin/dashboard/AdminDashboard'
 function App() {
   return (
@@ -22,7 +24,7 @@ function App() {
         <Route path="/user-profile" element={<UserProfile />} />
         {/* Admin  */}
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
-        {/* <Route path="/user-profile" element={<AdminProfile />} /> */}
+        <Route path="/admin-profile" element={<AdminProfile />} />
       </Routes>
     </Router>
   );

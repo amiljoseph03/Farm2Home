@@ -12,6 +12,7 @@ import WhyChooseUs from '../components/WhyChooseUs';
 import Delivary from '../components/Delivery';
 import Footer from '../components/Footer';
 import Navbar from '../components/common/Navbar';
+import Subscription from '../components/Subscription';
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Searchbar />
       <FeaturedSection />
       <About />
+      <Subscription/>
       {/* <Categories/> */}
       <Category2 />
       <RentalEquipment />

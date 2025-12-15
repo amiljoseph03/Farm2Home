@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../../styles/Navbar.css';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -36,8 +37,12 @@ const Navbar = () => {
               </div>
             )}
           </div>
-
-          <button className="login-btn">Login</button>
+          <Link to="/login">
+            <button className="">
+              {/* <CiUser /> */}
+               Login
+            </button>
+          </Link>
         </div>
 
         <button className="mobile-btn" onClick={() => setOpen(!open)}>
@@ -54,9 +59,9 @@ const Navbar = () => {
           ))}
 
           {/* <button className="login-btn">Login</button> */}
-          <button className="login-btn">
-            <Link to="../..//login">Login</Link>
-          </button>
+          {/* <button className="login-btn">
+            <Link to="/login">Login</Link>
+          </button> */}
         </div>
       )}
     </nav>

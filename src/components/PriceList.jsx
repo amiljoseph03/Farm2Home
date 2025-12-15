@@ -3,16 +3,20 @@ import banana from '../assets/prices/banana.jpg';
 import egg from '../assets/prices/egg.jpg';
 import milk from '../assets/prices/milk.jpg';
 import corn from '../assets/prices/corn.jpg';
+import onion from '../assets/prices/onion.jpg';
+import cabbage from '../assets/prices/cabbage.jpg';
+import carrot from '../assets/prices/carrot.jpg';
+import capsicum from '../assets/prices/capsicum.jpg';
 
 const priceItems = [
   { name: 'Banana', price: '₹60 / dozen', image: banana },
   { name: 'Egg', price: '₹7 / piece', image: egg },
   { name: 'Milk', price: '₹55 / litre', image: milk },
   { name: 'Tomato', price: '₹30 / kg', image: corn },
-  { name: 'Milk', price: '₹55 / litre', image: milk },
-  { name: 'Tomato', price: '₹30 / kg', image: corn },
-  { name: 'Milk', price: '₹55 / litre', image: milk },
-  { name: 'Tomato', price: '₹30 / kg', image: corn },
+  { name: 'Onion', price: '₹80 / Kg', image: onion },
+  { name: 'Cabbage', price: '₹30 / kg', image: cabbage },
+  { name: 'Carrot', price: '₹55 / Kg', image: carrot },
+  { name: 'Capsicum', price: '₹30 / kg', image: capsicum },
 ];
 
 const PriceList = () => {
