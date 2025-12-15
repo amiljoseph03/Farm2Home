@@ -4,7 +4,7 @@ import './AdminProfile.css';
 const FarmerProfile = () => {
   return (
     <div className="profile-container">
-      {/* HEADER / COVER IMAGE */}
+
       <div className="profile-header">
         <img
           className="cover-image"
@@ -20,7 +20,6 @@ const FarmerProfile = () => {
         </div>
       </div>
 
-      {/* PROFILE INFO */}
       <div className="profile-info">
         <h2>Joseph Dominic</h2>
         <p>Organic Farmer & Organic Produce Enthusiast</p>
