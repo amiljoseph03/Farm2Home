@@ -34,10 +34,10 @@
 /* ===== CARD ===== */
 .selling-card {
   width: 260px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(126, 77, 77, 0.08);
   backdrop-filter: blur(10px);
   border-radius: 22px;
-  padding: 30px 20px;
+  padding: 10px 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
 }
@@ -46,27 +46,28 @@
   transform: translateY(-12px);
 }
 
-/* ===== IMAGE FIX ===== */
+
 .image-box {
   width: 100%;
-  height: 160px;                 /* INCREASED SIZE */
-  display: flex;
+  height: 160px;                
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   position: relative;
 }
 
 
 .image-box img {
-  width: 185%;          /* INCREASE IMAGE WIDTH */
-  max-height: 100%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 0px; 
 }
 
 
+
 /* Soft glow behind image */
-.image-box::before {
+/* .image-box::before {
   content: "";
   position: absolute;
   width: 150px;
@@ -75,7 +76,7 @@
   filter: blur(45px);
   border-radius: 50%;
   z-index: -1;
-}
+} */
 
 
 /* ===== TEXT ===== */

@@ -1,73 +1,41 @@
-import '../styles/Category2.scss';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import '../styles/Category2.css';
+
 import veg from '../assets/categories/vegetables.jpg';
 import grains from '../assets/categories/grains.jpg';
 import seeds from '../assets/categories/seeds.jpg';
 import fruits from '../assets/categories/fruits.jpg';
-import equipment from '../assets/categories/equipment.jpg';
 
-
-const cards = [
-  {
-    image: veg,
-    title: 'Vegetables',
-    text: 'Fresh organic vegetables directly from farms.',
-    button: 'View Products',
-  },
-  {
-    image: grains,
-    title: 'Grains',
-    text: 'High quality grains for healthy living.',
-    button: 'View Products',
-  },
-  {
-    image: seeds,
-    title: 'Seeds',
-    text: 'Certified seeds for better yield.',
-    button: 'View Products',
-  },
-
-  {
-    image: fruits,
-    title: 'Fruits',
-    text: 'Certified seeds for better yield.',
-    button: 'View Products',
-  },
+const categories = [
+  { name: 'Vegetables', img: veg },
+  { name: 'Grains', img: grains },
+  { name: 'Seeds', img: seeds },
+  { name: 'Fruits', img: fruits },
 ];
 
-
-const Card = ({ image, title, text, button }) => {
+const CategorySection = () => {
   return (
-    <div className="card">
-      <div className="card__image">
-        <img src={image} alt={title} />
-      </div>
-      <h2 className="card__title">{title}</h2>
-      <p>{text}</p>
-      <button className="card-btn">{button}</button>
-    </div>
-  );
-};
-
-
-const Category2 = () => {
-  return (
-    <section className="category-page">
-      <h1 className="page-title">Shop by Category</h1>
+    <section className="category-section">
+      <h2>Shop by Category</h2>
 
       <div className="category-grid">
-        {cards.map((card, index) => (
-          <Card
-            key={index}
-            image={card.image}
-            title={card.title}
-            text={card.text}
-            button={card.button}
-          />
+        {categories.map((cat, index) => (
+          <div key={index} className="category-item">
+            {/* CATEGORY NAME */}
+            <div className="category-title">{cat.name}</div>
+
+            {/* IMAGE */}
+            <div className="image-wrapper">
+              <img src={cat.img} alt={cat.name} />
+            </div>
+
+            {/* BUTTON */}
+            <button className="view-btn">View Products</button>
+          </div>
         ))}
       </div>
     </section>
   );
 };
 
-export default Category2;
+export default CategorySection;
