@@ -9,6 +9,13 @@ import UserProfile from './users/pages/userprofile/UserProfile'
 
 import AdminProfile from './admin/adminprofile/AdminProfile'
 import AdminDashboard from './admin/dashboard/AdminDashboard'
+
+import Vegetables from './components/products/vegetables/vegetable'
+
+import Category2 from './components/category2';
+import RentalEquipment from './components/RentalEquipment';
+import RentDetails from './components/products/rentals/RentDetails'
+
 function App() {
   return (
     <Router>
@@ -25,6 +32,16 @@ function App() {
         {/* Admin  */}
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/admin-profile" element={<AdminProfile />} />
+
+        {/* products  */}
+        <Route path="/veg" element={<Vegetables />} />
+
+        {/* redirect  */}
+        <Route path="/category2" element={<Category2 />} />
+        <Route path="/rent" element={<RentalEquipment />} />
+
+       
+        <Route path="/rent-details" element={<RentDetails />} />
       </Routes>
     </Router>
   );

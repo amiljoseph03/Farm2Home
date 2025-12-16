@@ -1,0 +1,86 @@
+.veg-section {
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.veg-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.veg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.veg-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.veg-card:hover {
+  transform: translateY(-5px);
+}
+
+.veg-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.veg-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.veg-info h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.price {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.status {
+  display: inline-block;
+  margin: 8px 0;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.status.in {
+  background: #2e7d32;
+}
+
+.status.limited {
+  background: #f9a825;
+}
+
+.status.out {
+  background: #c62828;
+}
+
+button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background: #2e7d32;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}

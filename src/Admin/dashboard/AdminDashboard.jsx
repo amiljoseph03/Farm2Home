@@ -35,7 +35,7 @@ const AdminDashboard = () => {
             <FaChartPie /> Dashboard
           </Link>
 
-          <Link to="/admin/profile">
+          <Link to="/admin-profile">
             <FaUserShield /> Admin Profile
           </Link>
 

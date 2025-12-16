@@ -6,14 +6,9 @@ const SearchBar = () => {
     <div style={styles.container}>
       <input type="text" placeholder="Search here..." style={styles.input} />
       <button style={styles.button}>
-        <FaSearch />
+        <FaSearch style={styles.icon} />
       </button>
-    <div>
-        
     </div>
-    </div>
-
-    
   );
 };
 
@@ -24,10 +19,11 @@ const styles = {
     margin: '20px auto',
     display: 'flex',
     alignItems: 'center',
-    background: '#e8f5e9', 
+    background: '#e8f5e9',
     borderRadius: '40px',
     padding: '8px 14px',
     boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+    boxSizing: 'border-box', 
   },
   input: {
     flex: 1,
@@ -36,16 +32,27 @@ const styles = {
     fontSize: '16px',
     background: 'transparent',
     color: '#2e7d32',
+    padding: '10px',
+    height: '42px',
   },
-  button: {
-    background: '#2e7d32', 
-    border: 'none',
-    outline: 'none',
-    padding: '10px 14px',
-    borderRadius: '50%',
-    color: 'white',
-    cursor: 'pointer',
-    fontSize: '16px',
+ button: {
+  background: "#2e7d32",
+  border: "none",
+  outline: "none",
+  width: "42px",
+  height: "42px",
+  minWidth: "42px",
+  borderRadius: "50%",
+  cursor: "pointer",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  flexShrink: 0,
+}
+,
+  icon: {
+    color: '#0f0d0dff', 
+    fontSize: '18px', 
   },
 };
 

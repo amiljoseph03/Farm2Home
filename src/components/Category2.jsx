@@ -6,6 +6,9 @@ import grains from '../assets/categories/grains.jpg';
 import seeds from '../assets/categories/seeds.jpg';
 import fruits from '../assets/categories/fruits.jpg';
 
+import { Link } from 'react-router-dom';
+
+
 const categories = [
   { name: 'Vegetables', img: veg },
   { name: 'Grains', img: grains },
@@ -30,7 +33,10 @@ const CategorySection = () => {
             </div>
 
             {/* BUTTON */}
-            <button className="view-btn">View Products</button>
+            {/* <button className="view-btn">View Products</button> */}
+            <Link to="/veg">
+              <button className="view-btn">View Products</button>
+            </Link>
           </div>
         ))}
       </div>
