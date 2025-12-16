@@ -15,13 +15,26 @@ import Vegetables from './components/products/vegetables/vegetable'
 import Category2 from './components/category2';
 import RentalEquipment from './components/RentalEquipment';
 import RentDetails from './components/products/rentals/RentDetails'
-
+import Preloader from './components/Preloader';
+import { useState, useEffect } from 'react';
 function App() {
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
+  const [count, setCount] = useState(0);
+
+
+
   return (
     <Router>
       <Routes>
         {/* Landing page */}
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={loading ? <Preloader /> : <Home />} />
 
         <Route path="/login" element={<Auth />} />
         <Route path="/register" element={<Auth register />} />
@@ -40,7 +53,6 @@ function App() {
         <Route path="/category2" element={<Category2 />} />
         <Route path="/rent" element={<RentalEquipment />} />
 
-       
         <Route path="/rent-details" element={<RentDetails />} />
       </Routes>
     </Router>

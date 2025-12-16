@@ -9,7 +9,7 @@ import carrot from '../assets/prices/carrot.jpg';
 import capsicum from '../assets/prices/capsicum.jpg';
 
 const priceItems = [
-  { name: 'Banana', price: '₹60 / dozen', image: banana },
+  { name: 'Banana', price: '₹60 / kg', image: banana },
   { name: 'Egg', price: '₹7 / piece', image: egg },
   { name: 'Milk', price: '₹55 / litre', image: milk },
   { name: 'Tomato', price: '₹30 / kg', image: corn },
