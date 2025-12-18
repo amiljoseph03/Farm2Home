@@ -24,16 +24,15 @@ const CategorySection = () => {
       <div className="category-grid">
         {categories.map((cat, index) => (
           <div key={index} className="category-item">
-            {/* CATEGORY NAME */}
+            
             <div className="category-title">{cat.name}</div>
 
-            {/* IMAGE */}
+          
             <div className="image-wrapper">
               <img src={cat.img} alt={cat.name} />
             </div>
 
-            {/* BUTTON */}
-            {/* <button className="view-btn">View Products</button> */}
+         
             <Link to="/veg">
               <button className="view-btn">View Products</button>
             </Link>
